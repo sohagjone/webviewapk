@@ -17,6 +17,8 @@ import android.webkit.WebViewClient;
 
 public class MainActivity extends AppCompatActivity {
 
+    final String URL_TO_LOAD = "https://www.google.com/";
+
     WebView webView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         webSettings.setDomStorageEnabled(true);
         webSettings.setAppCacheEnabled(true);
         webSettings.setAppCacheEnabled(true);
-        webView.loadUrl("https://www.drrr.com");
+        webView.loadUrl(URL_TO_LOAD);
 
 
 
